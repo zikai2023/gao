@@ -1,4 +1,34 @@
 [
+{
+"name": "小鸭",
+"server": "http://shicheng.wang:555/",
+"startPage": "/",
+"showAll": false,
+"search": true,
+"params": {
+"/abc": {
+"password": "123"
+},
+"/abc/abc": {
+"password": "123"
+}
+}
+},
+{
+"name": "小猫",
+"server": "https://nics.eu.org",
+"startPage": "/SP1",
+"showAll": false,
+"search": true,
+"params": {
+"/abc": {
+"password": "123"
+},
+"/abc/abc": {
+"password": "123"
+}
+}
+},
         {
         "name" : "🙋丫仙女",
         "server" : "http://alist.xiaoya.pro",
