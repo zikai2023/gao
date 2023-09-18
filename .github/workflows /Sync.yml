@@ -1,1 +1,22 @@
-1
+# https://github.com/marketplace/actions/fork-sync?version=v1.2.1
+# .github/workflows/sync.yml
+name: Sync Fork
+
+on:
+  push:
+  schedule:
+    - cron: '0 0 1 * * ?' # 每30分触发, 对于一些更新不那么频繁的项目可以设置为每天一次, 低碳一点
+  workflow_dispatch: # on button click
+  
+jobs:
+  sync:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: tgymnich/fork-sync@v1.6.3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          owner: takagen99 # fork 上游项目 owner
+          head: main # fork 上游项目需要同步的分支
+          base: main # 需要同步到本项目的目标分支
