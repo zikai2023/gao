@@ -5,7 +5,7 @@ name: Sync Fork
 on:
   push:
   schedule:
-    - cron: '0 0 1 * * ?' # 每30分触发, 对于一些更新不那么频繁的项目可以设置为每天一次, 低碳一点
+    - cron: '0 */30 * * *' # 每30分触发, 对于一些更新不那么频繁的项目可以设置为每天一次, 低碳一点
   workflow_dispatch: # on button click
   
 jobs:
