@@ -20,7 +20,7 @@ jobs:
           git config --global user.email '121933848@qq.com'
           git pull --unshallow
           # 自行替换要同步的上游仓库地址
-          git remote add upstream https://github.com/dlgt7/gao.git
+          git remote add upstream https://github.com/gaotianliuyun/gao.git
           git fetch upstream
           git checkout main
           git merge upstream/main
