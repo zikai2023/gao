@@ -5,7 +5,7 @@ on:
   push:
   # 定时任务触发，使用 cron 规则，这里默认一小时执行一次      '0 * * * *'
   schedule:
-    - cron: '* * 23 * *'
+    - cron: '0 * * * *'
   workflow_dispatch:
 
 jobs:
