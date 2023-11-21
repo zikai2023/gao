@@ -6,7 +6,7 @@ on:
   # 定时任务触发，使用 cron 规则，这里默认一小时执行一次      '0 * * * *'    '0 */6 * * *'  12小时
 
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '0 * * * *'
   workflow_dispatch:
 
 jobs:
