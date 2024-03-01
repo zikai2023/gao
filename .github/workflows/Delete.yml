@@ -1,13 +1,13 @@
 #==========================================================================
 # https://github.com/ophub/amlogic-s9xxx-armbian
-# Description: Delete older releases and workflows runs
+# Description: Delete older releases and workflows runs  '0 */6 * * *'
 #==========================================================================
 
 name: Delete older releases and workflows
 
 on:
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: 0 */5 * * * ?
 # 这里默认12小时执行一次
 
   workflow_dispatch:
